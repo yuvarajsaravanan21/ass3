@@ -1,13 +1,12 @@
-package com.example;
+package com.example; // Matches the folder structure
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+// No need to import app if they are in the same package
 
-import main.java.com.example.app; 
-public class testapp{
+public class testapp {
     @Test
-    public void test(){
-        app ap=new app();
-        assertEquals(356,app.convert(180.0));
+    public void test() { // Removed 'static'
+        assertEquals(356.0, app.convert(180.0));
     }
-
- }
+}
